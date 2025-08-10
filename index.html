@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Taste Paradise</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            background-color: #fff8f0;
+        }
+        header {
+            background-color: #ffb347;
+            text-align: center;
+            padding: 20px;
+        }
+        header img {
+            width: 100%;
+            max-height: 250px;
+            object-fit: cover;
+        }
+        nav {
+            background-color: #ff9447;
+            padding: 10px;
+            text-align: center;
+        }
+        nav a {
+            margin: 0 15px;
+            text-decoration: none;
+            font-weight: bold;
+            color: white;
+        }
+        main {
+            padding: 20px;
+        }
+        section {
+            margin-bottom: 40px;
+        }
+        article {
+            background: white;
+            border: 1px solid #ddd;
+            padding: 15px;
+            margin: 15px 0;
+            border-radius: 8px;
+        }
+        article img {
+            width: 100%;
+            height: auto;
+            border-radius: 5px;
+        }
+        h3 {
+            margin-top: 10px;
+        }
+        p {
+            margin: 5px 0;
+        }
+        footer {
+            background-color: #ffb347;
+            text-align: center;
+            padding: 10px;
+            font-size: 14px;
+        }
+        input, textarea {
+            margin: 5px 0 15px;
+            width: 100%;
+            padding: 8px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
+        input[type="submit"] {
+            background-color: #ff9447;
+            color: white;
+            border: none;
+            font-weight: bold;
+            cursor: pointer;
+        }
+        input[type="submit"]:hover {
+            background-color: #ff7f27;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <img id="header-img" src="https://cdn.pixabay.com/photo/2016/03/05/19/02/hamburger-1238246_1280.jpg" alt="Restaurant Banner">
+    <h1>Taste Paradise</h1>
+</header>
+
+<nav>
+    <a href="#menu">Menu</a>
+    <a href="#order-form">Order Form</a>
+</nav>
+
+<main>
+    <!-- Menu Section -->
+    <section id="menu">
+        <h2>Menu</h2>
+
+        <article>
+            <img src="https://cdn.pixabay.com/photo/2017/12/09/08/18/pizza-3007395_1280.jpg" alt="Pizza">
+            <h3>Classic Margherita Pizza</h3>
+            <p>Fresh mozzarella, basil, and tomato sauce baked to perfection. <i>$10.99</i></p>
+        </article>
+
+        <article>
+            <img src="https://cdn.pixabay.com/photo/2017/05/07/08/56/pasta-2291908_1280.jpg" alt="Pasta">
+            <h3>Creamy Alfredo Pasta</h3>
+            <p>Rich and creamy Alfredo sauce with parmesan and garlic. <i>$12.99</i></p>
+        </article>
+
+        <article>
+            <img src="https://cdn.pixabay.com/photo/2016/03/05/19/02/hamburger-1238246_1280.jpg" alt="Burger">
+            <h3>Loaded Beef Burger</h3>
+            <p>Juicy beef patty with cheddar, lettuce, and special sauce. <i>$9.99</i></p>
+        </article>
+    </section>
+
+    <!-- Order Form Section -->
+    <section id="order-form">
+        <h2>Place Your Order</h2>
+        <form>
+            <label for="pizza-qty">Classic Margherita Pizza (Qty):</label>
+            <input type="number" id="pizza-qty" name="pizza_qty" min="0">
+
+            <label for="pasta-qty">Creamy Alfredo Pasta (Qty):</label>
+            <input type="number" id="pasta-qty" name="pasta_qty" min="0">
+
+            <label for="burger-qty">Loaded Beef Burger (Qty):</label>
+            <input type="number" id="burger-qty" name="burger_qty" min="0">
+
+            <p><strong>Choose a side:</strong></p>
+            <label><input type="radio" name="side" value="fries"> Fries</label><br>
+            <label><input type="radio" name="side" value="salad"> Salad</label><br>
+            <label><input type="radio" name="side" value="garlic bread"> Garlic Bread</label>
+
+            <p><strong>Add-ons:</strong></p>
+            <label><input type="checkbox" name="addon_cheese" value="extra cheese"> Extra Cheese</label><br>
+            <label><input type="checkbox" name="addon_drink" value="soft drink"> Soft Drink</label>
+
+            <label for="special-requests">Special Requests:</label>
+            <textarea id="special-requests" name="special_requests" rows="3"></textarea>
+
+            <input type="submit" value="Go To Checkout">
+        </form>
+    </section>
+</main>
+
+<footer>
+    <p>Made with love by CodédexUser123</p>
+</footer>
+
+</body>
+</html>
