@@ -1,2 +1,2 @@
 # resto--menu
-[Click To view](https://github.com/shreedivya19/resto--menu/)
+[Click To view](https://shreedivya19.github.io/resto--menu/)
