@@ -9,5 +9,5 @@ Tech Stack:
 HTML for structure
 CSS for styling
 JavaScript for interactivity
-[Live Demo:]
-(https://shreedivya19.github.io/resto--menu/)
+
+## [Live Demo](https://shreedivya19.github.io/resto--menu/)
